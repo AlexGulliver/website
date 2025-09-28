@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEX GULLIVER</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/photos.css">
+    <link rel="stylesheet" href="/styles/photoalbum.css">
+</head>
+<body>
+    {% include "navbar.njk" %}
+    <div class="photonavbar">
+        <div class="photonavlist">
+              {% for collection in collections.photos %} 
+                <a href="{{ collection.url }}">{{ collection.data.title }}</a>
+              {% endfor %}
+        </div>
+    <div class="photo-album-container">
+        <div class="image-grid">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include "footer.njk" %}
+</body>
+</html>

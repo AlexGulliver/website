@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEX GULLIVER</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/photos.css">
+</head>
+<body>
+    {% include "navbar.njk" %}
+
+    <!-- <img class="mor style="width:80%"occo" src="/assets/morocco.jpg" alt=""> -->
+    <div class="photonavbar">
+        <div class="photonavlist">
+              {% for collection in collections.photos %} 
+                <a href="{{ collection.url }}">{{ collection.data.title }}</a>
+              {% endfor %}
+        </div>
+</div>
+    <div class="photosandnav">
+        <!-- <div class="photonavbar">
+                <div class="photonavlist">
+                      {% for collection in collections.photos %} 
+                        <a href="{{ collection.url }}">{{ collection.data.title }}</a>
+                      {% endfor %}
+                </div>
+        </div> -->
+        <div class="photodisplay">       
+
+            <div class="slideshow-container">
+      
+              <div class="mySlides">
+                <img src="/assets/horse.JPG">
+              </div>
+      
+              <div class="mySlides">
+                <img src="/assets/america.JPG">
+              </div>
+      
+      
+              <div class="mySlides">
+                <img src="/assets/chi.JPG">
+              </div>
+            </div>
+          </div>
+          <div class="pointers">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+    </div>
+
+    <!-- <img class="morocco" src="/assets/america.jpg" alt=""> -->
+    <script src="/scripts/photoscript.js"></script>
+    {% include "footer.njk" %}
+</body>
+</html>

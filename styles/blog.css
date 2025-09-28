@@ -1,0 +1,5 @@
+.bloglistcontainer {
+    display: flex;            /* make it a flex container */
+    justify-content: center;  /* center horizontally */
+    margin: 130px auto 0 auto;
+}
