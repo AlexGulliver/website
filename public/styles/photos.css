@@ -1,11 +1,13 @@
 .photonavlist {
     text-align: center; /* centers inline elements like <a> */
-    margin: 130px auto 0 auto;
+    margin: auto;
+    color: black;
 }
 
 .photonavbar a{
     text-decoration: none;
     font-family: JMH Typewriter;
+    color: black;
 }
 
 .photonavbar a:hover {

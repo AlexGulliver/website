@@ -1,5 +1,24 @@
-.bloglistcontainer {
-    display: flex;            /* make it a flex container */
-    justify-content: center;  /* center horizontally */
-    margin: 130px auto 0 auto;
+.blogbox {
+    margin: auto;
+    width: 600px;
+    align-items: left;
+}
+
+.blogcontentbox {
+    width: 600px;
+    display: flex;
+    /* background-color: rgb(249, 243, 232); */
+
+}
+
+.bloglink{
+    text-decoration: none;
+    font-family: JMH Typewriter;
+    color: black;
+    margin-left: 20px;
+
+}
+
+.bloglink:hover {
+    text-decoration: underline;
 }

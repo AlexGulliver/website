@@ -9,13 +9,17 @@
 </head>
 <body>
     {% include "navbar.njk" %}
-    <div class="bloglistcontainer">
-        <div class="bloglist">
-            {% for collection in collections.blog %} 
-            <a href="{{ collection.url }}">{{ collection.data.title }}</a>
-            <p>{{ collection.data.description }}</p>
-            {% endfor %}
+    <div class="blogbox">
+    {% for blog in collections.blog reversed %}
+        <!-- {% if blog.data.progress != "WIP" %} -->
+        <div class="blogcontentbox">
+            <a class="bloglink" href="{{ blog.url }}">
+                <h3 class="blogtitle">{{ blog.data.title }}</h2>
+                <p class="blogdescription">{{blog.data.description}}</p>
+            </a>
         </div>
+        <!-- {% endif %} -->
+    {% endfor %}   
     </div>
     {% include "footer.njk" %}
 </body>

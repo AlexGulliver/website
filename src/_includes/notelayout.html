@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALEX GULLIVER</title>
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/other.css">
+    <link rel="stylesheet" href="/styles/note.css">
+    <link rel="stylesheet" href="/styles/notecontent.css">
 </head>
 <body>
     {% include "navbar.njk" %}
-    <div>
-        Coming soon...
+    <div class="notecontent">
+        {{ content }} 
     </div>
     {% include "footer.njk" %}
+
 </body>
 </html>

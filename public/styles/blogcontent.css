@@ -1,11 +1,17 @@
 .blogcontent {
-    margin: 150px auto 0 auto;
+    margin: auto;
     max-width: 600px; 
-    font-size: 18px;
+    font-size: 16px;
     font-family: JMH Typewriter;
     line-height: 1.4;
  }
 
+ @media screen and (max-width: 768px) {
+    .blogcontent {
+        width: 90%;  /* full width on small screens */
+        margin-top: 130px;
+    }
+ }
 .blogcontent p {
 margin-bottom: 1em;   /* space after paragraphs */
 }
@@ -24,5 +30,3 @@ margin-bottom: 1em;   /* space after paragraphs */
 .blogcontent em {
     font-style: italic;   /* reinforce italics */
 }
-
- 
