@@ -15,11 +15,18 @@ const antiScroll = ["Paint something",
                     ]
 
 const conversationDice = ["What's your favorite memory with each other?",
-                          "Share a fun fact about each other",
-                          "What is something you have never told each other?",
+                          "Share a fun fact",
+                          "What is something anyone else in the room?",
                           "What is your biggest goal right now?",
                           "Share a favorite memory",
-                          "Share something that is going well for yourselves",
+                          "Share something that is going well",
+                          "What are your biggest regrets",
+                          "If you could change something about your life, what would it be?",
+                          "What is something you're looking forward to?",
+                          "What is something you're nervous about?",
+                          "What is something you're proud of?",
+                          "What would you tell your younger selves?"
+
                         ]
 
 let characters = ["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"]

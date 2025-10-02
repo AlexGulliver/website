@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEX GULLIVER</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/cityspots.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+</head>
+<body>
+    {% include "navbar.njk" %}
+    <div class="cityspotscontainer">
+    {% for city in collections.cityspots %}
+        <div class="cityspotbox">
+            <a class="cityspotlink" href="{{ city.url }}">
+                <h3 class="cityspottitle">{{ city.data.title }}</h3>
+            </a>
+        </div>
+        <div id="map"></div>
+    {% endfor %}   
+    </div>
+    {% include "footer.njk" %}
+</body>
+</html>

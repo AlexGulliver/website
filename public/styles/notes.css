@@ -1,0 +1,21 @@
+.notescontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notelink {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.notelink :hover {
+    text-decoration: underline;
+}
+
+.notecontent {
+    margin: auto;
+    width: 600px;
+}
+

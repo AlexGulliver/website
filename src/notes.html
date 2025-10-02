@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEX GULLIVER</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/notes.css">
+</head>
+<body>
+    {% include "navbar.njk" %}
+    <div class="notescontainer">
+    {% for note in collections.notes %}
+        <div class="notebox">
+            <a class="notelink" href="{{ note.url }}">
+                <h3 class="notetitle">{{ note.data.title }}</h3>
+            </a>
+        </div>
+    {% endfor %}   
+    </div>
+    {% include "footer.njk" %}
+</body>
+</html>
