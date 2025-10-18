@@ -1,5 +1,5 @@
 ---
-title: fourandahalf
+title: Four and a Half Hours
 ---
 4(1/2) HOURS 🃏 
 Card game made on a 4(1/2) hour coach ride

@@ -10,6 +10,9 @@
 </head>
 <body>
     {% include "navbar.njk" %}
+    <div class="date">
+        {{ blog.data.date }}
+    </div>
     <div class="blogcontent">
         {{ content }} 
     </div>

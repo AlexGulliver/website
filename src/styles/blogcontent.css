@@ -9,7 +9,6 @@
  @media screen and (max-width: 768px) {
     .blogcontent {
         width: 90%;  /* full width on small screens */
-        margin-top: 130px;
     }
  }
 .blogcontent p {
@@ -24,9 +23,18 @@ margin-bottom: 1em;   /* space after paragraphs */
 .blogcontent figcaption {
     font-size: 0.9em;
     margin-top: 0.5em;
+    margin-bottom: 1em;
     color: #666;
 }
 
 .blogcontent em {
     font-style: italic;   /* reinforce italics */
+}
+
+/* 1) Reset default spacing for lists inside blogcontent */
+.blogcontent ul,
+.blogcontent ol {
+  margin-top: 0.2em;        /* small gap above lists */
+  margin-bottom: 1em;     /* gap below lists */
+  padding-left: 1.5em;
 }

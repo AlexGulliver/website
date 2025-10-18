@@ -1,6 +1,8 @@
 ---
-title: Cool words and phrases
+title: cool words and phrases
 ---
+
+Taking suggestions!
 
 Confelicity: deriving joy from another's happiness or success
 

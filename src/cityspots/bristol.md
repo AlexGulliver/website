@@ -4,6 +4,8 @@ title: Bristol
 
 *Lovely lovely Bristol. I spent my placement year here and tried to do as much exploring as I could. There are so many hidden spots and different areas with their own vibe and feeling.*
 
+<!-- <script>var map = L.map('map').setView([51.505, -0.09], 13);</script> -->
+
 ## Contents
 - [Food](#food)
 - [Drink](#drink)
